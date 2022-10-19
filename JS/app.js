@@ -1,7 +1,7 @@
 //Crear boton que cambie el color de fondo
 var boton = document.createElement("input");
 boton.setAttribute("onclick","cambiarFondo();")
-boton.setAttribute("value","Tema Oscuro");
+boton.setAttribute("value","Tema Oscuro/Claro");
 boton.setAttribute("type","submit");
 document.querySelector('div').appendChild(boton);
 function cambiarFondo(){

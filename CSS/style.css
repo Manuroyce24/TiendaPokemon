@@ -8,6 +8,7 @@ body {
 .principal {
   float: left;
   margin-left: 10%;
+  margin-right: 10%;
   width: 80%;
   height: 100%;
   background-color: rgb(9, 9, 67);
@@ -67,4 +68,47 @@ ul.topnav li.right {
   ul.topnav li {
     float: none;
   }
+}
+
+.flexPociones{
+  background-color: transparent;
+  border-radius: 25px;
+  border: solid 2px yellow;
+}
+
+.flexPociones{
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(9, 9, 67);
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.flexPociones{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.flexPokeball{
+  background-color: transparent;
+  border-radius: 25px;
+  border: solid 2px yellow;
+}
+
+.flexPokeball{
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(9, 9, 67);
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.flexPokeball{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+footer{
+  color: black;
+  font-weight: 1000;
 }
