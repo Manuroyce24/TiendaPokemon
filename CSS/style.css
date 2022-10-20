@@ -104,6 +104,14 @@ ul.topnav li.right {
   flex-direction: row;
 }
 
+.pocion{
+  margin-right: 7rem;
+}
+
+.superpocion{
+  margin-right: 7rem;
+}
+
 @media (max-width: 1050px) {
   .flexPociones {
     flex-direction: column;
@@ -135,10 +143,17 @@ ul.topnav li.right {
   }
 }
 
+.pokeball{
+  margin-right: 7rem;
+}
+
+.superball{
+  margin-right: 7rem;
+}
+
 .maps {
   margin-bottom: 2rem;
 }
-
 
 .container {
   border-radius: 5px;
@@ -191,7 +206,7 @@ input[type=password] {
 
 input[type=submit] {
   background-color: rgb(75, 247, 230);
-  color: white;
+  color: black;
   padding: 12px 20px;
   border: solid 1px black;
   border-radius: 4px;
