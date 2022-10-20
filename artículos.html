@@ -17,10 +17,11 @@
   </header>
 
   <ul class="topnav">
-    <li><a class="active" href="Index.html">Inicio</a></li>
-    <li><a href="artículos.html">Artículos</a></li>
-    <li><a href="#contact">Contacto</a></li>
-    <li class="right"><a href="#about">Log In - <img src="./Imagenes/userpkmn.png"></a></li>
+    <li><a class="active" href="Index.html"><img src="./Imagenes/avatar.png"> Inicio</a></li>
+    <li><a href="artículos.html"><img src="./Imagenes/avatar2.png"> Artículos</a></li>
+    <li><a href="Contacto.html"><img src="./Imagenes/avatar3.png"> Contacto</a></li>
+    <li class="right"><a href="Login.html">Log In           <img src="./Imagenes/userpkmn.png"></a></li>
+    <li class="right"><a href="#theme"><button onclick="darkMode()" title="Cambiar color"><img src="" width="10" height="10"></button></a></li>
   </ul>
   <div class="principal">
  
@@ -28,21 +29,40 @@
 
     <h3>Pociones</h3>
     <div class="flexPociones">
-      
       <div class="pocion">
-        <img src="./Imagenes/potion.png">
+        <img src="./Imagenes/potion.png" title="Cura 20PS">
+        <h4>Poción</h4>
+        <details>
+          <summary>Descripción</summary>
+          <p>Cura 20ps a tu pokemon.</p>
+          <p>Puede usarse durante la aventura o un combate.</p>
+        </details>
         <p>5$</p>
         <input type="submit" value="Comprar">
       </div>
       
       <div class="superpocion">
-        <img src="./Imagenes/superpotion.png">
+        <img src="./Imagenes/superpotion.png" title="Cura 50PS">
+        <h4>Superpoción</h4>
+        <details>
+          <summary>Descripción</summary>
+          <p>Cura 50ps a tu pokemon.</p>
+          <p>Version mejorada de la poción clasica.</p>
+          <p>Puede usarse durante la aventura o un combate.</p>
+        </details>
         <p>10$</p>
         <input type="submit" value="Comprar">
       </div>
        
       <div class="hiperpocion">
-        <img src="./Imagenes/hyperpotion.png">
+        <img src="./Imagenes/hyperpotion.png" title="Cura 200PS">
+        <h4>Hiperpoción</h4>
+        <details>
+          <summary>Descripción</summary>
+          <p>Cura 200ps a tu pokemon.</p>
+          <p>Version mejorada de la superpoción.</p>
+          <p>Puede usarse durante la aventura o un combate.</p>
+        </details>
         <p>20$</p>
         <input type="submit" value="Comprar">
       </div>
@@ -53,20 +73,40 @@
     <div class="flexPokeball">
       
       <div class="pokeball">
-        <img src="./Imagenes/pokeball.png">
+        <img src="./Imagenes/pokeball.png" title="Ratio x1">
+        <h4>Pokeball</h4>
+        <details>
+          <summary>Descripción</summary>
+          <p>Sirve para capturar pokemons.</p>
+          <p>Tiene una probabilidad de x1 en la captura.</p>
+        </details>
         <p>7$</p>
         <input type="submit" value="Comprar">
       </div>
       
       <div class="superball">
-        <img src="./Imagenes/superball.png">
+        <img src="./Imagenes/superball.png" title="Ratio x1.5">
+        <h4>Superball</h4>
+        <details>
+          <summary>Descripción</summary>
+          <p>Sirve para capturar pokemons.</p>
+          <p>Version mejorada de la pokeball clasica.</p>
+          <p>Tiene una probabilidad de x1.5 en la captura.</p>
+        </details>
         <p>14$</p>
         <input type="submit" value="Comprar">
         <br>
       </div>
        
       <div class="hiperball">
-        <img src="./Imagenes/ultraball.png">
+        <img src="./Imagenes/ultraball.png" title="Ratio x2">
+        <h4>Ultraball</h4>
+        <details>
+          <summary>Descripción</summary>
+          <p>Sirve para capturar pokemons.</p>
+          <p>Version mejorada de la superball clasica.</p>
+          <p>Tiene una probabilidad de x2 en la captura.</p>
+        </details>
         <p>25$</p>
         <input type="submit" value="Comprar">
       </div>
