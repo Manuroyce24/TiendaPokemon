@@ -104,14 +104,6 @@ ul.topnav li.right {
   flex-direction: row;
 }
 
-.pocion{
-  margin-right: 7rem;
-}
-
-.superpocion{
-  margin-right: 7rem;
-}
-
 @media (max-width: 1050px) {
   .flexPociones {
     flex-direction: column;
@@ -143,17 +135,10 @@ ul.topnav li.right {
   }
 }
 
-.pokeball{
-  margin-right: 7rem;
-}
-
-.superball{
-  margin-right: 7rem;
-}
-
 .maps {
   margin-bottom: 2rem;
 }
+
 
 .container {
   border-radius: 5px;
