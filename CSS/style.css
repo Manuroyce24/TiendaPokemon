@@ -89,17 +89,10 @@ ul.topnav li.right {
   background-color: transparent;
   border-radius: 25px;
   border: solid 2px yellow;
-}
-
-.flexPociones {
   padding: 10px;
   margin: 10px;
   border: solid 2px rgb(9, 9, 67);
   border-radius: 25px;
-  background-color: transparent;
-}
-
-.flexPociones {
   display: inline-flex;
   flex-direction: row;
 }
@@ -114,17 +107,10 @@ ul.topnav li.right {
   background-color: transparent;
   border-radius: 25px;
   border: solid 2px yellow;
-}
-
-.flexPokeball {
   padding: 10px;
   margin: 10px;
   border: solid 2px rgb(9, 9, 67);
   border-radius: 25px;
-  background-color: transparent;
-}
-
-.flexPokeball {
   display: inline-flex;
   flex-direction: row;
 }
