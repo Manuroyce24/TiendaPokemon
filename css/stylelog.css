@@ -7,6 +7,9 @@
 :root {
   --gridMaxWidth: 40%;
   --gridWidth: 90%;
+  --bg:#fff;
+  --bh: darkcyan;
+  --bb: rgb(0, 219, 219);
 }
 
 .grid {
@@ -15,24 +18,7 @@
   max-inline-size: var(--gridMaxWidth);
 }
 
-.icon {
-  block-size: 1.25em;
-  display: inline-block;
-  inline-size: 1.25em;
-  line-height: 1.25em;
-  margin-right: 0.625em;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.icon--info {
-  background-color: #e5e5e5;
-  border-radius: 50%;
-}
-
 :root {
-  --bodyBackgroundColor: #eaeaea;
-  --bodyColor: #999;
   --bodyFontFamily: 'Helvetica', 'Arial';
   --bodyFontFamilyFallback: sans-serif;
   --bodyFontSize: 0.875rem;
@@ -62,7 +48,7 @@ body {
 
 :root {
   --anchorColor: inherit;
-  --anchorHoverColor: #1dabb8;
+  --anchorHoverColor: darkcyan;
 }
 
 a {
@@ -86,7 +72,7 @@ input[type='button'] {
 
 :root {
   --loginBorderRadius: 0.25em;
-  --loginHeaderBackgroundColor: #198d98;
+  --loginHeaderBackgroundColor: darkcyan;
 
   --loginInputBorderRadius: 0.25em;
 }
@@ -95,7 +81,7 @@ input[type='button'] {
   background-color: var(--loginHeaderBackgroundColor);
   border-top-left-radius: var(--loginBorderRadius);
   border-top-right-radius: var(--loginBorderRadius);
-  color: #fff;
+  color: var(--bg);
   padding: 1.5em;
   text-align: center;
   text-transform: uppercase;
@@ -107,13 +93,13 @@ input[type='button'] {
 }
 
 .login__body {
-  background-color: #fff;
+  background-color: var(--bg);
   padding: 1.5em;
   position: relative;
 }
 
 .login__body::before {
-  background-color: #fff;
+  background-color: var(--bg);
   content: '';
   height: 0.5em;
   left: 50%;
@@ -127,7 +113,7 @@ input[type='button'] {
 
 .login input[type='email'],
 .login input[type='password'] {
-  border: 0.0625em solid #e5e5e5;
+  border: 0.0625em solid var(--bg);
   padding: 1em 1.25em;
 }
 
@@ -146,9 +132,9 @@ input[type='button'] {
 
 .login input[type='button'] {
   display: none;
-  background-color: #1dabb8;
+  background-color: var(--bh);
   border-radius: var(--loginInputBorderRadius);
-  color: #fff;
+  color: var(--bg);
   font-weight: 700;
   order: 1;
   padding: 0.75em 1.25em;
@@ -157,7 +143,7 @@ input[type='button'] {
 
 .login input[type='button']:focus,
 .login input[type='button']:hover {
-  background-color: #198d98;
+  background-color: var(--bb);
 }
 
 .container {
