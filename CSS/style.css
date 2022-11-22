@@ -593,3 +593,29 @@ section{
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header .user-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: var(--bg);
+    padding:0 1.5rem;
+}
+
+.header .user-items-container.active{
+    right: 0;
+}
