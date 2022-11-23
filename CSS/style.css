@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-    --pc: #FF6961;
-    ;
-    --black: #13131a;
-    --bg: darkcyan;
-    --lc: rgb(212, 212, 79);
-    --hv: #701c27;
-    --border: .1rem solid rgba(255, 255, 255, .3);
+    --pc: #1466c3;
+    --bg: #ebebeb;
+    --lc: black;
+    --hv: #efb810;
+    --border: .1rem solid #1466c3;
 }
 
-::placeholder {
-    color: var(--lc);
-}
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -42,12 +37,13 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--lc);
+    background: #1466c3;
     border-radius: 5rem;
 }
 
 body {
-    background: url(../images/fondazo.jpg) repeat;
+    background: url(../images/312.jpg);
+    background-attachment: fixed;
 }
 
 section {
@@ -60,8 +56,11 @@ section {
     text-align: center;
     color: var(--lc);
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     font-size: 4rem;
+    text-decoration: underline;
+
 }
 
 .heading span {
@@ -75,17 +74,18 @@ section {
     padding: .9rem 3rem;
     font-size: 1.7rem;
     color: var(--lc);
-    background: var(--hv);
+    background-color: #efb810;
     cursor: pointer;
 }
 
 .btn:hover {
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     color: var(--lc);
+    background-color: rgb(255, 123, 0);
 }
 
 .header {
-    background: var(--bg);
+    background-color: var(--bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,11 +105,11 @@ section {
 .header .navbar a {
     margin: 0 1rem;
     font-size: 1.6rem;
-    color: var(--lc);
+    color: var(--pc);
 }
 
 .header .navbar a:hover {
-    color: hv;
+    color: var(--pc);
     border-bottom: .1rem solid var(--hv);
     padding-bottom: .5rem;
 }
@@ -122,7 +122,7 @@ section {
 }
 
 .header .iconos div:hover {
-    color: var(--hv);
+    color: var(--pc);
 }
 
 #menu-btn {
@@ -151,7 +151,7 @@ section {
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--pc);
     padding: 1rem;
     text-transform: none;
 }
@@ -173,7 +173,7 @@ section {
     right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
-    background: var(--bg);
+    background-color: var(--bg);
     padding: 0 1.5rem;
 }
 
@@ -250,30 +250,29 @@ section {
     box-shadow: var(--box-shadow);
     padding: 2rem;
     border-radius: .5rem;
-    background: var(--bg);
+    background-color: var(--bg);
     text-align: center;
 }
 
 .header .login-form.active {
     right: 2rem;
     transition: .4s linear;
-
 }
 
 .header .login-form h3 {
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: var(--lc);
+    color: var(--pc);
 }
 
 .header .login-form .eMail {
     width: 100%;
     margin: .7rem 0;
-    background: #eee;
+    background-color: #eee;
     border-radius: .5rem;
     padding: 1rem;
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--pc);
     text-transform: none;
 }
 
@@ -284,7 +283,7 @@ section {
     border-radius: .5rem;
     padding: 1rem;
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--pc);
     text-transform: none;
 }
 
@@ -368,6 +367,8 @@ section {
     padding: 5rem;
     text-align: center;
     border: var(--border);
+    margin: 1rem;
+    border-radius: 15px;
 }
 
 .productos .box-container .box img {
@@ -403,7 +404,7 @@ section {
 
 
 .productos .box-container .box:hover {
-    background: #fff;
+    background: rgb(116, 116, 116);
 }
 
 .productos .box-container .box:hover>* {
@@ -422,6 +423,8 @@ section {
     text-align: center;
     border: var(--border);
     padding: 2rem;
+    margin: 1rem;
+    border-radius: 15px;
 }
 
 .offerts .box-container .box .iconos a {
@@ -458,7 +461,7 @@ section {
 
 .offerts .box-container .box .content .stars i {
     font-size: 1.7rem;
-    color: greenyellow;
+    color: #efb810;
 }
 
 .offerts .box-container .box .content .price {
@@ -484,6 +487,8 @@ section {
     border: var(--border);
     text-align: center;
     padding: 3rem 2rem;
+    margin: 1rem;
+    border-radius: 15px;
 }
 
 .opiniones .box-container .box p {
@@ -508,7 +513,7 @@ section {
 
 .opiniones .box-container .box .stars i {
     font-size: 1.5rem;
-    color: greenyellow;
+    color: #efb810;
 }
 
 .contact .row {
@@ -563,7 +568,7 @@ section {
 
 
 .footer {
-    background: var(--black);
+    background: black;
     text-align: center;
 }
 
@@ -576,7 +581,7 @@ section {
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    color: var(--lc);
+    color: white;
     border: var(--border);
     margin: .3rem;
     border-radius: 50%;
@@ -596,7 +601,7 @@ section {
 
 .footer .enlaces a {
     padding: .7rem 2rem;
-    color: var(--lc);
+    color: white;
     border: var(--border);
     font-size: 2rem;
 }
@@ -607,7 +612,7 @@ section {
 
 .footer .credit {
     font-size: 2rem;
-    color: var(--bg);
+    color: var(--hv);
     font-weight: lighter;
     padding: 1.5rem;
 }
