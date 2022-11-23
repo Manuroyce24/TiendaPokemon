@@ -8,7 +8,7 @@ let loginForm = document.querySelector('.login-form');
 
 //Menu responsive
 
-document.querySelector('#menu-btn').onclick = () =>{
+document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
@@ -17,7 +17,7 @@ document.querySelector('#menu-btn').onclick = () =>{
 
 //Boton busqueda
 
-document.querySelector('#search-btn').onclick = () =>{
+document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
     cartItem.classList.remove('active');
     loginForm.classList.remove('active');
@@ -26,7 +26,7 @@ document.querySelector('#search-btn').onclick = () =>{
 
 //Boton carro
 
-document.querySelector('#cart-btn').onclick = () =>{
+document.querySelector('#cart-btn').onclick = () => {
     cartItem.classList.toggle('active');
     searchForm.classList.remove('active');
     loginForm.classList.remove('active');
@@ -35,14 +35,16 @@ document.querySelector('#cart-btn').onclick = () =>{
 
 //Boton login
 
-document.querySelector('#login-btn').onclick = () =>{
+document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active');
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
     navbar.classList.remove('active');
 }
 
-window.onscroll = () =>{
+//Barra lateral
+
+window.onscroll = () => {
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
     loginForm.classList.remove('active');
