@@ -9,6 +9,10 @@
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
+::placeholder { 
+    color: var(--lc); 
+}
+
 *{
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
@@ -209,6 +213,77 @@ section{
     width: 100%;
     text-align: center;
     color: var(--lc);
+}
+
+
+.admin{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:var(--lc);
+    background: var(--hv);
+    cursor: pointer;
+    display: none;
+}
+
+.admin:hover{
+    letter-spacing: .2rem;
+    color: var(--lc);
+}
+
+
+.header .login-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width:35rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: .5rem;
+    background: var(--bg);
+    text-align: center;
+}
+
+.header .login-form.active{
+    right:2rem;
+    transition: .4s linear;
+
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--lc);
+}
+
+.header .login-form .eMail{
+    width: 100%;
+    margin:.7rem 0;
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .login-form .cLave{
+    width: 100%;
+    margin:.7rem 0;
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    display: none;
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:red;
 }
 
 .inicio{
@@ -517,10 +592,6 @@ section{
     padding:1.5rem;
 }
 
-
-
-
-
 /* media queries  */
 @media (max-width:991px){
 
@@ -596,26 +667,3 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.header .user-items-container{
-    position: absolute;
-    top:100%; right: -100%;
-    height: calc(100vh - 9.5rem);
-    width: 35rem;
-    background: var(--bg);
-    padding:0 1.5rem;
-}
-
-.header .user-items-container.active{
-    right: 0;
-}
